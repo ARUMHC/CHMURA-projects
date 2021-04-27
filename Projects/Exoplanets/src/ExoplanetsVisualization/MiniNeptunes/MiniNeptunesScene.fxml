@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onMousePressed="#mouseKeyPressed" prefHeight="640.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.MiniNeptunes.MiniNeptunesSceneController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="116.0" layoutY="63.0" prefHeight="543.0" prefWidth="928.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="miniNeptunesTable" layoutX="63.0" layoutY="36.0" onMousePressed="#mouseKeyPressed" prefHeight="596.0" prefWidth="305.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="planetName" prefWidth="304.0" text="Planet Name" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" onMousePressed="#mouseKeyPressed" prefHeight="634.0" prefWidth="775.0" style="-fx-background-image: url('https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fA%3D%3D&amp;w=1000&amp;q=80');">
+               <children>
+                  <Text fill="WHITE" layoutX="25.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mini Neptunes are one of the types of exoplanets. They are similar to out Neptune from Solar System but smaller and they too have dense hydrogen-helium atmosphere. They can consist of deep layers of ice, rock or liquid oceans. Sometimes they are called &quot;gas dwarfs&quot;. " wrappingWidth="672.13671875">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="25.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Radius of a Mini Neptune should be between 1.7 and 3.9 of the Earth Radius, its mass should be above 6 masses of the Earth and its density is the same as that od other gas planets (below 3 g/cm3)." wrappingWidth="656.13671875">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="25.0" layoutY="404.0" onMouseReleased="#mouseKeyPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="[Additionally theyre hella cute and UwU]" wrappingWidth="625.13671875">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="25.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mini Neptunes Characteristics" wrappingWidth="580.13671875">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="menuButton" layoutX="644.0" layoutY="32.0" mnemonicParsing="false" onAction="#menuButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Menu" textFill="WHITE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

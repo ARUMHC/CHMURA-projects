@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onMousePressed="#mouseKeyPressed" prefHeight="640.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.HotJupiters.HotJupitersSceneController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="90.0" layoutY="107.0" prefHeight="723.0" prefWidth="1046.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="721.0" prefWidth="257.0">
+               <children>
+                  <TableView fx:id="hotJupitersTable" layoutX="-7.0" layoutY="6.0" onMousePressed="#mouseKeyPressed" prefHeight="721.0" prefWidth="308.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="planetName" prefWidth="305.0" text="Planet Name" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" onMousePressed="#mouseKeyPressed" prefHeight="722.0" prefWidth="732.0" style="-fx-background-image: url(/ExoplanetsVisualization/Images/hotJupitersImage.jpg);">
+               <children>
+                  <Text fill="WHITE" layoutX="21.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hot Jupiters are one of the types of exoplanets. They are similar to our Jupiter from Solar System however, orbiting much closer to their star (at a fraction of an astronomical unit). Most of them show a synchronous rotation, similar to the Moon orbiting the Earth.Additionally, they are characterized by a low density corresponding to the gas planets. " wrappingWidth="676.13671875">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="27.0" layoutY="343.0" onMousePressed="#mouseKeyPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="One of the best-known hot Jupiters is 51 Pegasi b - the first exoplanet to be ever discovered. This discovery later lead to the whole world learning about the existence of dozens of new planets." wrappingWidth="638.13671875">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="menuButton" layoutX="650.0" layoutY="50.0" mnemonicParsing="false" onAction="#menuButtonClicked" style="-fx-border-color: white; -fx-background-color: none;" text="Menu" textFill="WHITE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+                  <Text fill="WHITE" layoutX="21.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hot Jupiters Characeristics" wrappingWidth="525.13671875">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

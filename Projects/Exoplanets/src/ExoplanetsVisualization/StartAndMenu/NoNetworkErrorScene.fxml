@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="1080.0" style="-fx-background-image:url(/ExoplanetsVisualization/Images/BlackHole.jpg);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.StartAndMenu.NoNetworkErrorSceneController">
+   <children>
+      <Text layoutX="334.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No interenet connection. Please connect to the internet before using this app." textAlignment="CENTER" wrappingWidth="411.029296875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="reconnectButton" layoutX="469.0" layoutY="404.0" mnemonicParsing="false" onAction="#reconnectButtonClicked" text="Reconnect">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

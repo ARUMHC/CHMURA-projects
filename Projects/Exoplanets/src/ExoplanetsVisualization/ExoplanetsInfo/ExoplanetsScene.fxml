@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onMousePressed="#mouseKeyPressed" prefHeight="640.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.ExoplanetsInfo.ExoplanetsSceneController">
+   <children>
+      <SplitPane dividerPositions="0.5027829313543599" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" onMousePressed="#mouseKeyPressed" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TreeTableView fx:id="treeTable" layoutX="37.0" layoutY="80.0" prefHeight="398.0" prefWidth="274.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TreeTableColumn fx:id="exoplanets" prefWidth="538.0" text="Exoplanets" />
+                    </columns>
+                  </TreeTableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane layoutX="221.0" layoutY="102.0" orientation="VERTICAL" prefHeight="638.0" prefWidth="576.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" onMousePressed="#mouseKeyPressed" prefHeight="100.0" prefWidth="160.0" style="-fx-background-image: url(/ExoplanetsVisualization/Images/exoplanetsImage.jpg);">
+                           <children>
+                              <Button fx:id="menuButton" layoutX="450.0" layoutY="27.0" mnemonicParsing="false" onAction="#menuButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Menu" textFill="WHITE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+                              <Text fill="WHITE" layoutX="-3.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exoplanets" textAlignment="CENTER" wrappingWidth="517.13671875" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="19.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of an exoplanets is usually created by adding a letter singnifying the order in which objects were discovered (startin from &quot;b&quot;, &quot;a&quot; is reserved for the host start)." wrappingWidth="517.1367122232914">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Text>
+                              <Text fill="WHITE" layoutX="19.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First exoplanet ever discoreved is 51 Pegasi b (a Hot Jupiter) in 1995 which later started an avalanche of research nad discoveries of new planets." wrappingWidth="492.13672310113907">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="19.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The most popular discovery methods are Radial Velocity and Trasit. First of them relies on the fact that a star moves, ever so slightly, responding to the gravitational tug of its smaller companion. Transit reveals an exoplanet because the planet passing in front of its star slightly dims its light." wrappingWidth="492.13673517107964">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="19.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To see more about discovery facilities go back to Menu and choose &quot;Observatories&quot;." wrappingWidth="492.13672310113907">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextFlow fx:id="firstSentence" layoutX="14.0" layoutY="64.0" prefHeight="113.0" prefWidth="492.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

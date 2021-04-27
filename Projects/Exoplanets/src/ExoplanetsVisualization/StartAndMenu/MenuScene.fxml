@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" prefHeight="640.0" prefWidth="1080.0" style="-fx-background-image: url(/ExoplanetsVisualization/Images/Cosmos2.jpg);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.StartAndMenu.MenuSceneController">
+   <children>
+      <Text fill="WHITE" layoutX="407.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" wrappingWidth="265.13671875">
+         <font>
+            <Font size="96.0" />
+         </font>
+         <effect>
+            <Glow level="0.4" />
+         </effect></Text>
+      <Button fx:id="exoButton" layoutX="126.0" layoutY="188.0" mnemonicParsing="false" onAction="#exoButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Exoplanets Info" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="massesButton" layoutX="124.0" layoutY="366.0" mnemonicParsing="false" onAction="#massesButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Masses Analysis" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="observatoriesButton" layoutX="830.0" layoutY="188.0" mnemonicParsing="false" onAction="#observatoriesButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Observatories" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="planetarySystemButton" layoutX="814.0" layoutY="366.0" mnemonicParsing="false" onAction="#planetarySystemButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Planetary Systems" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="jupitersButton" layoutX="480.0" layoutY="532.0" mnemonicParsing="false" onAction="#jupitersButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Hot Jupiters" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="neptunsButton" layoutX="832.0" layoutY="532.0" mnemonicParsing="false" onAction="#neptunsButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Mini Neptuns" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="earthsButton" layoutX="137.0" layoutY="532.0" mnemonicParsing="false" onAction="#earthsButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Super Earths" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="densityAndMassButton" layoutX="371.0" layoutY="366.0" mnemonicParsing="false" onAction="#densityAndMassButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Relationship between mass and density" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="aboutDataButton" layoutX="371.0" layoutY="189.0" mnemonicParsing="false" onAction="#aboutDataButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="About Data" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="aboutUsButton" layoutX="620.0" layoutY="189.0" mnemonicParsing="false" onAction="#aboutUsButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="About Us" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="1008.0" layoutY="24.0" mnemonicParsing="false" onAction="#exitButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Exit" textFill="WHITE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+   </children>
+</AnchorPane>

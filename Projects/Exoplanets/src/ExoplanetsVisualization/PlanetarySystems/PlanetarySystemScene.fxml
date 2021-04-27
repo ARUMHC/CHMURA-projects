@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onMousePressed="#mouseKeyPressed" prefHeight="640.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.PlanetarySystems.PlanetarySystemController">
+    <children>
+        <SplitPane dividerPositions="0.32364729458917835" layoutX="336.0" layoutY="190.0" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TableView fx:id="planetarySystemTable" layoutX="-89.0" layoutY="141.0" onMousePressed="#mouseKeyPressed" prefHeight="598.0" prefWidth="361.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="planetarySName" prefWidth="129.0" text="Planetary System  Name" />
+                                <TableColumn fx:id="planets" prefWidth="188.0" text="Number of planets" />
+                            </columns>
+                        </TableView>
+                    </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <SplitPane dividerPositions="0.38207547169811323" layoutX="188.0" layoutY="227.0" orientation="VERTICAL" prefHeight="598.0" prefWidth="511.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" onMousePressed="#mouseKeyPressed" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                              <TextFlow fx:id="description" layoutX="192.0" layoutY="49.0" prefHeight="143.0" prefWidth="670.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="49.0" />
+                              <Button fx:id="menuButton" layoutX="663.0" layoutY="13.0" mnemonicParsing="false" onAction="#menuButtonClicked" style="-fx-background-color: none; -fx-border-color: black;" text="Menu" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="15.0" />
+                              <Text layoutX="100.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis of number of planets in planetary system">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                                    </children></AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <BarChart fx:id="PlanetsChart" alternativeRowFillVisible="false" barGap="0.0" categoryGap="1.0" layoutX="14.0" layoutY="-34.0" legendVisible="false" onMousePressed="#mouseKeyPressed" prefHeight="331.0" prefWidth="509.0" title="Distribution of planets in planetary system" verticalGridLinesVisible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <xAxis>
+                                                <CategoryAxis label="Number of planets" side="BOTTOM" fx:id="x" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis fx:id="y" label="Number of planetary systems" side="LEFT" />
+                                            </yAxis>
+                                        </BarChart>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

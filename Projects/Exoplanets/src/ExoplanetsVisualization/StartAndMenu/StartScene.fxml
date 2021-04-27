@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onMousePressed="#mouseKeyPressed" prefHeight="640.0" prefWidth="1080.0" style="-fx-background-image: url(/ExoplanetsVisualization/Images/Cosmos2.jpg);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.StartAndMenu.StartSceneController">
+   <children>
+      <Button fx:id="startButton" layoutX="363.0" layoutY="265.0" mnemonicParsing="false" onAction="#startButtonClicked" prefHeight="151.0" prefWidth="355.0" style="-fx-background-color: none;" text="Start" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="96.0" />
+         </font>
+         <effect>
+            <Glow level="0.4" />
+         </effect>
+      </Button>
+      <Text fill="WHITE" layoutX="96.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exoplanets Data Analysis">
+         <font>
+            <Font name="Times New Roman" size="86.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

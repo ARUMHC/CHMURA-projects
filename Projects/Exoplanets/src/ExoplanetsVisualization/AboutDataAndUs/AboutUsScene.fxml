@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onMousePressed="#mouseKeyPressed" prefHeight="640.0" prefWidth="1080.0" style="-fx-background-image: url('https://images.unsplash.com/photo-1528819027803-5473f2bf7633?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max');" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.AboutDataAndUs.AboutUsSceneController">
+    <children>
+        <Text fill="WHITE" layoutX="407.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us" wrappingWidth="266.13671875">
+            <font>
+                <Font size="64.0" />
+            </font>
+            <effect>
+                <Glow level="0.4" />
+            </effect></Text>
+      <Text fill="WHITE" layoutX="111.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hubert Ruczyński">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="817.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kinga Ułasik">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="162.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Co-author">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="841.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Co-author">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="23.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student of Faculty of Mathematics and Information Science in Warsaw University of Technology." wrappingWidth="358.328125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="709.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student of Faculty of Mathematics and Information Science in Warsaw University of Technology." wrappingWidth="358.328125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="23.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graduate from top polish highschool Gimnazjum i Liceum Akademickie, Toruń in 2019." wrappingWidth="358.328125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="709.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graduate from top polish highschool III LO im. Marynarki Wojennej RP, Gdynia in 2019." wrappingWidth="345.13673186302185">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="438.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="inż. Maciej Bednarz">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="196.0" fitWidth="183.0" layoutX="126.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Hubert.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="1080.0" layoutX="8.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../Images/BannerMINI.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="459.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project coordinator">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="394.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Co-worker in Faculty of Mathematics and Information Science in Warsaw University of Technology." textAlignment="CENTER" wrappingWidth="292.328125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="menuButton" layoutX="1001.0" layoutY="14.0" mnemonicParsing="false" onAction="#menuButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Menu" textFill="WHITE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="23.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Field of study: data engineering and analysis" wrappingWidth="345.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="709.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Field of study: data engineering and analysis" wrappingWidth="345.13671576976776">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="196.0" fitWidth="183.0" layoutX="796.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Kinga1.jpg" />
+         </image></ImageView>
+    </children>
+</AnchorPane>

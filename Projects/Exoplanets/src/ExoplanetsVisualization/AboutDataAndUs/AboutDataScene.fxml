@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onMousePressed="#mouseKeyPressed" prefHeight="711.0" prefWidth="1026.0" style="-fx-background-image: url('https://images.unsplash.com/photo-1528819027803-5473f2bf7633?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max');" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.AboutDataAndUs.AboutDataSceneController">
+   <children>
+      <Text fill="WHITE" layoutX="351.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Data">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="74.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data that are used to present the information about exoplanets in ths appcication orginate from NASA's Exoplanet Archive database. It contains tons of options and informations so we chose the most important ones. Additionaly, we took into account that presented facts should be understandable and interesting also for people who dont have wide knowledge about astronomy." wrappingWidth="912.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="74.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional information (especially about Mini Neptunes, Super Earths and Hot Jupiters) come from the popular science book &quot;The Planet Factory&quot; written by Elizabeth Tasker who is a british astrophysicist. Her publication is focused on the search for &quot;the second Earth&quot; and about general genesis and characteristics of planets outside the Solar System. If you are (or will get) interested in exoplnates or astronomy we strongly recommend to take a look at it." wrappingWidth="912.1367173790932">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="nasaLink" layoutX="300.0" layoutY="600.0" onAction="#nasaLinkClicked" prefHeight="41.0" prefWidth="244.0" text="NASA Exoplanets Archive" textFill="#7788dd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <Text fill="WHITE" layoutX="66.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to take a look at the raw data (or looking for more information about exoplanets) go here:" wrappingWidth="912.1367173790932">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="menuButton" layoutX="920.0" layoutY="24.0" mnemonicParsing="false" onAction="#menuButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Menu" textFill="WHITE" />
+   </children>
+</AnchorPane>

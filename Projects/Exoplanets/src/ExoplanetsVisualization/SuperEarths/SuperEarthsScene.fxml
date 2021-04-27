@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onMousePressed="#mouseKeyPressed" prefHeight="640.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExoplanetsVisualization.SuperEarths.SuperEarthsSceneController">
+   <children>
+      <SplitPane dividerPositions="0.35353535353535354" layoutX="89.0" layoutY="56.0" prefHeight="650.0" prefWidth="1040.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="superEarthsTable" layoutX="14.0" layoutY="14.0" onMousePressed="#mouseKeyPressed" prefHeight="648.0" prefWidth="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="planetName" prefWidth="363.0" text="Planet Name" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" onMousePressed="#mouseKeyPressed" prefHeight="160.0" prefWidth="100.0" style="-fx-background-image: url('https://images.hdqwalls.com/download/andromeda-galaxy-way-ik-1366x768.jpg');">
+               <children>
+                  <Text fill="WHITE" layoutX="29.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Earths are one of the types of exoplanets. They are bigger than Earth but smaller than Neptune and their density is the same as that of other rocky planets. Most of them are orbiting their host star in time shorter than 100 earth days and sometimes even  are closer to the star than Hot Jupiters. The most common orbit radius among Super Earths equals 0.05 AU." wrappingWidth="593.13671875">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="29.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Looking for Super Earth is especially important in seaking the Second Earth. After the planet is found the Godilocks Zone (or habitable zone) is determined, which is the range of distance with the right temperatures for water to remain liquid. Godilocks Zone is specified in order to finally find life in space." wrappingWidth="593.1367236375809">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="29.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Super Earths are generally strongly feministic and will beat your ass if you make them angry]" wrappingWidth="593.1367236375809">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="menuButton" layoutX="610.0" layoutY="26.0" mnemonicParsing="false" onAction="#menuButtonClicked" style="-fx-background-color: none; -fx-border-color: white;" text="Menu" textFill="WHITE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+                  <Text fill="WHITE" layoutX="29.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Earths Characteristics" wrappingWidth="561.13671875">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
