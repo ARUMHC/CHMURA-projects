@@ -1,4 +1,4 @@
-## Music Composers database
+# Music Composers database
 
 To generate the database open and run the *db_create.sql* using Microsoft SQL Server Management Studio
 
