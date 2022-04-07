@@ -1,7 +1,6 @@
-### Music Composers database
-#### Author: Kinga Ulasik IiAD
+## Music Composers database
 
-To generate the databe open and run the *db_create.sql* using Microsoft SQL Server Management Studio
+To generate the database open and run the *db_create.sql* using Microsoft SQL Server Management Studio
 
 Next, download all the Java files. Go to the *Interface* class and modify the 24th line so the application will be able to coonnect to the MS SQL Server Management Studio.
 
