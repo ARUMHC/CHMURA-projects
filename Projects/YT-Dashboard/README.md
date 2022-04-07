@@ -1,4 +1,7 @@
 # Dashboard analyzing and presenting information about the history of viewed videos on YouTube
+
+*Authors: Patryk Tomaszewski MiNI IiAD, Adrian Stańdo MiNI IiAD, Kinga Ułasik MiNI IiAD*
+
 To open the app simply go to the link: https://tomaszewskipatryk.github.io/YT_Dashboard/
 
 To make the app work, you will have to import you own YouTube data which you can aquire using GoogleTakout or import our example data located in 'example-data' directory
