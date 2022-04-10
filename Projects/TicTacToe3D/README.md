@@ -1,6 +1,6 @@
 # TicTacToe 3D
 
-*Authors: Kinga Ułasik, Mateusz Ziemła*
+*Authors: Kinga Ułasik MiNI IiAD, Mateusz Ziemła MiNI IiAD*
 
 TicTacToe 3D is a www website that allows you to play tic-tac-toe 3D games - each one of three standard boards represents one layer of a cube. The site also provides a registration and login system plus displays the players' leaderboard. 
 
