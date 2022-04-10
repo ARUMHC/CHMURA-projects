@@ -1,4 +1,4 @@
-# MI2 Data Lab Summer Intership
+# MI2 Data Lab Summer Internships
 
 My main task during the summer intership in MI2 Data Lab was to create and publish an R package implementing the International Business Communication Standards (IBCS) for data visualizations. Thats how the tidycharts package came into existence, in collaboration with Bartosz Sawicki and Piotr Piątyszek.
 
